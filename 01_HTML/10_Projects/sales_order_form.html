@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sales Order Form</title>
+    <style>
+        form {
+            width: 400px;
+            margin: 30px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        fieldset {
+            border: 2px solid black;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid gray;
+            padding: 8px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 100%;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Sales Order Form</legend>
+
+            <label>Buyer's Name:</label><br>
+            <input type="text" name="buyerName"><br><br>
+
+            <table>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Keyboard</td>
+                    <td>Rs. 250/-</td>
+                    <td><input type="text" name="keyboardQty"></td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>Rs. 100/-</td>
+                    <td><input type="text" name="mouseQty"></td>
+                </tr>
+                <tr>
+                    <td>LCD</td>
+                    <td>Rs. 8000/-</td>
+                    <td><input type="text" name="lcdQty"></td>
+                </tr>
+                <tr>
+                    <td>1GB RAM</td>
+                    <td>Rs. 2500/-</td>
+                    <td><input type="text" name="ramQty"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Method</legend>
+            <input type="radio" name="payment" value="Visa" checked> Visa<br>
+            <input type="radio" name="payment" value="MasterCard"> Master Card
+        </fieldset>
+
+        <div class="buttons">
+            <input type="submit" value="Submit Order">
+            <input type="reset" value="Clear Order Form">
+        </div>
+    </form>
+
+</body>
+
+</html>
