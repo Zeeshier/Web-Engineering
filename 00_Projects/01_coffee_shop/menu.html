@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Haven Café - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Bean Haven Café</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+    <main>
+        <section class="menu">
+            <h1>Our Menu</h1>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="coffee">Coffee</button>
+                <button class="filter-btn" data-category="pastries">Pastries</button>
+                <button class="filter-btn" data-category="snacks">Snacks</button>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item" data-category="coffee">
+                    <h3>Espresso</h3>
+                    <p>Rich and bold single shot of espresso.</p>
+                    <p>$3.00</p>
+                    <button class="add-to-cart" data-name="Espresso" data-price="3.00">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso with steamed milk and foam.</p>
+                    <p>$4.50</p>
+                    <button class="add-to-cart" data-name="Cappuccino" data-price="4.50">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="pastries">
+                    <h3>Croissant</h3>
+                    <p>Flaky, buttery croissant baked fresh.</p>
+                    <p>$2.50</p>
+                    <button class="add-to-cart" data-name="Croissant" data-price="2.50">Add to Cart</button>
+                </div>
+                <div class="menu-item" data-category="snacks">
+                    <h3>Avocado Toast</h3>
+                    <p>Toasted bread with fresh avocado.</p>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-name="Avocado Toast" data-price="5.00">Add to Cart</button>
+                </div>
+            </div>
+            <div class="cart">
+                <h2>Cart</h2>
+                <div id="cart-items"></div>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bean Haven Café. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
