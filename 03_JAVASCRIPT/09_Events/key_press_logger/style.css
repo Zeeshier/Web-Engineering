@@ -1,0 +1,8 @@
+body {
+     font-family: Arial;
+      padding: 20px; 
+    }
+#log p {
+     margin: 0;
+      color: rgb(145, 1, 1);
+     }
